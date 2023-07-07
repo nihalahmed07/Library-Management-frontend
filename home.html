@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library Management</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css\home.css">
+  <script src="js/home.js"></script>
+</head>
+
+<body>
+  <div class="container">
+  <div class="header">
+    <h1>Library Management</h1>
+    <button onclick="logout()" class="logout">Log Out</button>
+  </div>
+  <div class="cart-search">
+
+    <div class="search">
+      <input type="text" id="searchInput" placeholder="Search Books" />
+      <button class="sb" onclick="searchBooks()">Search</button>
+      <button onclick="searchWithGoogle()"><i class="fab fa-google"></i> Google Search</button>
+      <button onclick="searchWithYouTube()"><i class="fab fa-youtube"></i> YouTube</button>
+    </div>
+    <div id="cart">
+      <div class="cart-name">
+        <h2><i class="fas fa-shopping-cart"></i> Cart</h2>
+        <ul id="cartItems"></ul>
+      </div>
+      
+      <button onclick="checkout()">Checkout</button>
+    </div>
+    
+    
+  </div>
+    
+  
+  <div class="sort-filter">
+    <div class="sort">
+      <label for="sortSelect">Sort By:</label>
+      <select id="sortSelect" onchange="sortBooks()">
+        <option value="newest">Newest Release</option>
+        <option value="oldest">Oldest Release</option>
+      </select>
+    </div>
+
+    <div class="filter">
+      <label for="filterSelect">Filter By:</label>
+      <select id="filterSelect" onchange="filterBooks()">
+        <option value="all">All</option>
+        <option value="year">Year of Publication</option>
+        <option value="genre">Genre</option>
+        <option value="author">Author's Name</option>
+      </select>
+      <input type="text" id="filterInput" placeholder="Enter filter value" />
+      <button onclick="filterBooks()">Apply Filter</button>
+    </div>
+  </div>
+
+  <div id="count"></div>
+  <div id="results"></div>
+
+  
+</div>
+</body>
+</html>

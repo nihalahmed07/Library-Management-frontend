@@ -1,0 +1,138 @@
+*{
+    font-family: 'League Spartan', sans-serif;
+}
+
+body {
+    background-image: url(../images/Library.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.container {
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+    width: 80%;
+}
+
+.heading{
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.user-admin{
+    display: flex;
+    flex-direction: row;;
+}
+
+@media (max-width: 768px) {
+    .user-admin {
+    flex-direction: column;
+    }
+}
+
+.left-section, .right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+    width: 200px;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    border: transparent;
+    border-bottom: 1.6px solid #ccc;
+    background-color: transparent;
+}
+
+.form-container button {
+    width: 70px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: transparent;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.bt:hover {
+    border: transparent;
+    border-bottom: 1.6px solid #ccc;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-buttons button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+a img{
+    width: 30px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: white; 
+}
+
+input::placeholder,
+textarea::placeholder {
+font-style: italic;
+}
+
+input[type="text"],input[type="password"]:focus {
+outline: none;
+border: none;
+border: transparent;
+    border-bottom: 1.6px solid #ccc;
+    color: white;
+    font-style: italic;
+}

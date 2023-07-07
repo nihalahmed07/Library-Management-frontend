@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css\signup.css">
+    <script src="js/signup.js"></script>
+</head>
+<body>
+    <div class="container">
+        <p class="heading"> LIBRARY MANAGEMENT</p>
+        <div class="user-admin"> 
+            <div class="left-section">
+                <div class="title">NEW USER</div>
+                <div class="form-container">
+                    <input type="text" id="name" placeholder="Name">                    
+                    <input type="text" id="userEmail" placeholder="Email ID">
+                    <input  type="password" id="userPassword" placeholder="Password">
+                    <input type="date" class="myDate" name="myDate">
+                    <div id="sender">
+                        <input type="text" id="number" placeholder="+91..............">
+                      
+
+                    </div>
+                    <div id="verifier" style="display: none">
+                        <input type="text" id="verificationcode" placeholder="OTP Code">
+                        <div>
+                            <input type="button" id="verify" value="Verify" onClick="codeverify()">
+                        </div>
+                        
+                        <div class="p-conf conf">Verified</div>
+                        <div class="n-conf conf">OTP ERROR</div>
+                    </div>
+
+
+                    <div class="options">
+                        
+                    <button class="bt" type="submit" onclick="gotohome()">Sign Up</button>
+                    </div>
+                    
+                    <div class="social-buttons">
+                        <button>
+                            <a>
+                                <img src="images/google.png">
+        
+                            </a>
+                        </button>
+                        <button>
+                            <a>
+                                <img src="images/microsoft.png">
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        </div>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth-compat.js"></script>  
+</body>
+</html>

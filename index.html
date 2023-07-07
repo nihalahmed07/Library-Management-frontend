@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login-Main</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css\index.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <p class="heading"> LIBRARY MANAGEMENT</p>
+        <div class="user-admin"> 
+            <div class="left-section">
+                <div class="title">USER</div>
+                <div class="form-container">
+                    <input type="text" id="userEmail" placeholder="Username">
+                    <input  type="password" id="userPassword" placeholder="Password">
+                    <div class="options">
+                        <button class="bt" type="submit" onclick="loginUser()">Sign In</button>
+                    <button class="bt" type="submit" onclick="signup()">Sign Up</button>
+                    </div>
+                    
+                    <div class="social-buttons">
+                        <button>
+                            <a>
+                                <img src="images/google.png">
+                        
+        
+                            </a>
+                        </button>
+                        <button>
+                            <a>
+                                <img src="images/microsoft.png">
+                    
+        
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="title">ADMIN</div>
+                <div class="form-container">
+                    <input type="text" id="adminEmail" placeholder="Username">
+                    <input type="password" id="adminPassword" placeholder="Password">
+                    <button class="bt" type="submit" onclick="adminlog()">Sign In</button>
+                    <div class="social-buttons">
+                        <button>
+                            <a>
+                                <img src="images/google.png">
+                          
+        
+                            </a>
+                        </button>
+                        <button>
+                            <a>
+                                <img src="images/microsoft.png">
+                          
+        
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</body>
+</html>
